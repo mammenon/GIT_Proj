@@ -1,7 +1,9 @@
-create table login(
-username varchar(50) not null,
-password varchar(50));
+create table enqdetails(
+name varchar(50) not null,
+email varchar(50),
+subject varchar(50),
+message varchar(50));
 
 
-insert into login values("admin", "admin@123"); 
-insert into login values("naveen", "testing@123"); 
+insert into enqdetails values("manzoor", "manzoor@gmail.com","apartments", "looking for an apartments"); 
+--insert into login values("naveen", "testing@123"); 

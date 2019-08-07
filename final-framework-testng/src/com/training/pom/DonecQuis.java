@@ -21,6 +21,21 @@ public class DonecQuis {
 	@FindBy(xpath="//*[@name='your-name']")
 	private WebElement yourname;
 	
+	
+	
+	public WebElement getYourname() {
+		return yourname;
+	}
+	public WebElement getYouremail() {
+		return youremail;
+	}
+	public WebElement getYoursubject() {
+		return yoursubject;
+	}
+	public WebElement getYourmessage() {
+		return yourmessage;
+	}
+
 	@FindBy(xpath="//*[@name='your-email']")
 	private WebElement youremail;
 	
@@ -75,6 +90,7 @@ public class DonecQuis {
 	public void sendUserName(String yourname) 
 	{
 		this.yourname.clear();
+		//this.yourname = yourname;
 		this.yourname.sendKeys(yourname);
 	}
 	
